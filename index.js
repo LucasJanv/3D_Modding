@@ -10,7 +10,7 @@ const config = require('./JSON/config.json');
 // Packages
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
-client.login(prcess.evn.token);
+client.login(process.env.token);
 
 // Discord Buttons
 const dButton = require("discord-buttons");
