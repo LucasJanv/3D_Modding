@@ -166,7 +166,7 @@ module.exports = {
             .setFooter(`© 3D Modding`)
 
             var lbjDm = message.guild.members.cache.get('711635370336452701')
-            if (!fabianDm) return;
+            if (!lbjDm) return;
 
             lbjDm.send(bDmMsg)
         }
