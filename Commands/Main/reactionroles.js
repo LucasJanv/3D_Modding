@@ -9,7 +9,7 @@ const ms = require("ms");
 module.exports = {
     name: 'reactionroles',
     description: '',
-    async execute(message, args, client, Discord, dButton) {
+    async execute(message, args, client, Discord, dButton, member) {
 
         client.on("message", async message => {
             // Checking if the message author is a bot.
