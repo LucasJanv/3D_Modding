@@ -300,5 +300,27 @@ module.exports = {
                 message.channel.send(invCh)
             }
         }
+
+        //Logging
+
+        //const logCh = message.member.guild.channels.get(config.tkLog)
+
+        //if (!logCh) return;
+
+        //logCh.send(tkLogEmbed)
+
+        //var tkLogEmbed = new Discord.MessageEmbed()
+        //.setColor("2F3136")
+        //.setTitle(`Logging Systeem - 3D Modding`)
+        //.setDescription(``)
+        //.setFooter(`© 3D Modding`)
+
+        
+
+
+
+
 	},
+
+
 };  
