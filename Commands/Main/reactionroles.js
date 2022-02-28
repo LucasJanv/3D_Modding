@@ -42,9 +42,9 @@ module.exports = {
                 switch (reaction.emoji.name) {
                     case "📢":
                         // Checking if the member already has the role.
-                        if (message.member.roles.cache.has(Role1.id)) {return message.channel.send("You already have the role.").then(msg => msg.delete({timeout: 1000 * 5}))}; 
+                        if (message.member.roles.cache.has(Role1.id)) {return message.channel.send(` **${member.displayName}**You already have this role.`).then(msg => msg.delete({timeout: 1000 * 5}))}; 
                         // Adding the role.
-                        message.member.roles.add(Role1).then(message.channel.send(`${Role1.name} Role added! to ${message.author}`)).then(msg => msg.delete({timeout: 1000 * 5}));
+                        message.member.roles.add(Role1).then(message.channel.send(`${Role1.name} Role added! to **${member.displayName}**`)).then(msg => msg.delete({timeout: 1000 * 5}));
                         // Breaking the switch statement to make sure no other cases are executed.
                         break
                 }
@@ -52,9 +52,9 @@ module.exports = {
                 switch (reaction.emoji.name) {
                     case "✔️":
                         // Checking if the member already has the role.
-                        if (message.member.roles.cache.has(Role1.id)) {return message.channel.send("You already have the role.").then(msg => msg.delete({timeout: 1000 * 5}))};
+                        if (message.member.roles.cache.has(Role1.id)) {return message.channel.send(` **${member.displayName}**You already have this role.`).then(msg => msg.delete({timeout: 1000 * 5}))};
                         // Adding the role.
-                        message.member.roles.add(Role2).then(message.channel.send(`${Role2.name} Role added! to ${message.author}`)).then(msg => msg.delete({timeout: 1000 * 5}));
+                        message.member.roles.add(Role2).then(message.channel.send(`${Role2.name} Role added! to **${member.displayName}**`)).then(msg => msg.delete({timeout: 1000 * 5}));
                         // Breaking the switch statement to make sure no other cases are executed.
                         break
                 }
