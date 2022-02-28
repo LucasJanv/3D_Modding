@@ -7,7 +7,7 @@ const fs = require("fs");
 const ms = require("ms");
 
 module.exports = {
-    name: 'test2',
+    name: 'reactionroles',
     description: '',
     async execute(message, args, client, Discord, dButton) {
 
